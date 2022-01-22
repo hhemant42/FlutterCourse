@@ -1,4 +1,5 @@
-import 'package:all_finance/home_page.dart';
+import 'package:all_finance/pages/home_page.dart';
+import 'package:all_finance/pages/login_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,7 +12,16 @@ class AllFinance extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomePage(),
+      themeMode: ThemeMode.light,
+      theme: ThemeData(primarySwatch: Colors.teal),
+      darkTheme: ThemeData(
+        //brightness: Brightness.dark,
+        primarySwatch: Colors.red,
+      ),
+      routes: {
+        "/": (contexr) => LoginPage(),
+        "/home": (context) => HomePage(),
+      },
     );
   }
 }
