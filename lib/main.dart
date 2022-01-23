@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:all_finance/pages/home_page.dart';
 import 'package:all_finance/pages/login_page.dart';
 import 'package:flutter/material.dart';
@@ -17,10 +19,8 @@ class AllFinance extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.teal,
         fontFamily: GoogleFonts.lato().fontFamily,
-        //primaryTextTheme: GoogleFonts.latoTextTheme()
       ),
       darkTheme: ThemeData(
-        //brightness: Brightness.dark,
         primarySwatch: Colors.red,
       ),
       routes: { 
